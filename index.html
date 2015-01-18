@@ -3,9 +3,6 @@
 <title>bad.shoes</title>
 
 <style>
-h1, h2 {
-    text-align: center;
-}
 body, html {
 	margin: 0;
 	padding: 0;
@@ -27,13 +24,14 @@ function onYouTubeIframeAPIReady() {
 	player = new YT.Player('player', {
 		height: '100%',
 		width: '100%',
-		videoId: 'qBhlDMIaNOQ',
+		videoId: 'wCF3ywukQYA',
 		playerVars: {
 			controls: 0,
 			disablekb: 1,
 			start: 120,
 			end: 126,
-			autoplay: 1
+			autoplay: 1,
+			iv_load_policy: 3
 		},
 		events: {
 			onReady: onPlayerReady
