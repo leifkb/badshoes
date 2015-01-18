@@ -42,7 +42,7 @@ function onPlayerReady() {
 	var justDidSeek = true;
 	setInterval(function() {
 		var time = player.getCurrentTime();
-		if (!justDidSeek && (time >= 126 || time < 120)) {
+		if (!justDidSeek && (time >= 125.5 || time < 120)) {
 			player.seekTo(120, true);
 			player.playVideo();
 			justDidSeek = true;
